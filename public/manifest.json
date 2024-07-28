@@ -1,0 +1,16 @@
+{
+    "name": "Test Chrome Extension",
+    "description": "Test task",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["https://www.npr.org/"],
+        "js": ["contentscript.js"]
+    }],
+    "permissions": [
+        "storage"
+    ]
+}
